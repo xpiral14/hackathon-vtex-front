@@ -8,7 +8,7 @@ interface ContainerProps {
 }
 
 export const Container = styled.div<ContainerProps>`
-      font-size: 18px;
+      font-size: 30px;
       line-height: 21px;
       width: 600px;
       height: 50px;
