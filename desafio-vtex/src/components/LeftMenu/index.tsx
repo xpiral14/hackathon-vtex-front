@@ -35,6 +35,7 @@ const Container = styled.div<any>`
   flex-direction: column;
 
 
+
   background: #A487CA;
   opacity: 0.7;
 
