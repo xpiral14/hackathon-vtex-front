@@ -1,32 +1,31 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { Container, Content, Menu } from './styles';
+import { Container, Content } from './styles';
 
 const Header: React.FC = () => {
-    return (
-        <Container>
+  return (
+    <Container>
       <Content>
         <nav>
-          <img src="" alt="PEXINXA" />
-        </nav> 
-
-        <Menu>
-            <div>
+          <ul>
+            <li>
               <Link to="/">Pagina Inicial</Link>
-            </div>
-            <div>
-              <Link to="/profile">Como Funciona</Link>
-            </div>
-            <div>
-              <Link to="/profile">Quem Somos</Link>
-            </div>
-          </Menu>
-        
+            </li>
+            <li>
+              <Link to="/">Como Somos</Link>
+            </li>
+            <li>
+              <Link to="/">Quem Somos</Link>
+            </li>
+            <li>
+              <Link to="/auth">Area do Lojista</Link>
+            </li>
+          </ul>
+        </nav>
       </Content>
     </Container>
-      );
-    }
-
+  );
+};
 
 export default Header;

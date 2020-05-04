@@ -6,13 +6,13 @@ import Header from './components/Header';
 import Routes from './routes';
 
 const App: React.FC = () => (
-    <>
-      <BrowserRouter>
-        <Header/>
-        <Routes />
-      </BrowserRouter>
-      <GlobalStyle/>
-    </>
+  <>
+    <BrowserRouter>
+      <Header />
+      <Routes />
+    </BrowserRouter>
+    <GlobalStyle />
+  </>
 );
 
 export default App;

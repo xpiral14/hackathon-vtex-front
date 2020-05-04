@@ -1,24 +1,20 @@
 import React from 'react';
 
-import { BannerPrincipal } from './styles';
+import { Container, Banner, Title, BannerMiddle } from './styles';
 
-import backgroundBanner from '../../assets/background-banner.jpeg';
+// import backgroundBanner from '../../assets/background-banner.jpeg';
 
 const Dashboard: React.FC = () => {
-    return <div> 
-    <BannerPrincipal>
+  return (
+    <Container>
+      <Banner>
+        <Title>PechinchAKI, o APP perfeito pra você que deseja aumentar o fluxo de vendas e a rotatividade de seu estoque. </Title>
+        <Title>Seja Mais! Seja PechinchAKI!</Title>
+      </Banner>
+      <BannerMiddle/>
 
-        <div>
-            <img src={backgroundBanner} alt="bannerPrincipal">
-            </img>
-
-            <strong>Pexinxaí, o APP perfeito pra você que deseja aumentar o fluxo de vendas e a rotatividade de seu estoque. Seja mais! Seja Pexinxaí!</strong>
-
-        </div>
-        
-    
-    </BannerPrincipal> </div>;
-
+    </Container>
+  );
 };
 
 export default Dashboard;
