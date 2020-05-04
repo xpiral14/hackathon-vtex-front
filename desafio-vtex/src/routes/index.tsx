@@ -9,6 +9,8 @@ const Routes: React.FC = () => (
   <Switch>
     <Route path="/" exact component={Dashboard} />
     <Route path="/auth" component={Logon} />
+
+    
     <Route path="/home" component={Home} />
   </Switch>
 );

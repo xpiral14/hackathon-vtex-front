@@ -1,19 +1,17 @@
 import styled from 'styled-components';
 
-import BackGroundLogin from '../../assets/background-login.svg';
+import BackGroundLogin from '../../assets/background-login.png';
 
 
 export const Container = styled.div`
-  width: 100vw;
   height: 100vh;
-
   display: flex;
   align-items: center;
+  width: 100%;
   justify-content: center;
 
-  background:  url(${BackGroundLogin}) no-repeat center;
+  background: url(${BackGroundLogin}) no-repeat center;
   background-size: cover;
-
 `;
 
 export const Content = styled.div`
@@ -25,13 +23,14 @@ export const Logo = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 1;
     img {
         height: 30vh;
         width: 20vw;
       }
 `;
 
-export const Formulario = styled.div`
+export const Formulario = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;

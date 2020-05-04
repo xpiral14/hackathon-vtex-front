@@ -1,17 +1,14 @@
 import React from 'react';
 
 import { Container} from './styles';
-
-import Nav from '../../components/Nav'
-
 // import backgroundBanner from '../../assets/background-banner.jpeg';
 
-const Dashboard: React.FC = () => {
+const Home: React.FC = () => {
   return (
     <Container>
-      <Nav/>
+      <h1>Dashboard</h1>
     </Container>
   );
 };
 
-export default Dashboard;
+export default Home;
