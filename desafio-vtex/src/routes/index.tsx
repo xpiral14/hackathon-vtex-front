@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import Dashboard from '../pages/Dashboard';
 import Logon from '../pages/Logon';
 import Home from '../pages/Home';
+import Merchant from '../pages/Merchant';
 
 const Routes: React.FC = () => (
   <Switch>
@@ -12,6 +13,7 @@ const Routes: React.FC = () => (
 
     
     <Route path="/home" component={Home} />
+    <Route path="/merchant" component={Merchant} />
   </Switch>
 );
 
