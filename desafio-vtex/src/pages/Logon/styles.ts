@@ -31,40 +31,12 @@ export const Logo = styled.div`
       }
 `;
 
-export const Form = styled.form`
+export const Formulario = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 30px;
-    input {
-      font-size: 18px;
-      line-height: 21px;
-      width: 600px;
-      height: 50px;
-      margin-top: 33px;
-      border-radius: 20px;
-      border: 1px solid #E6ECF0;
-      color: #9B9B9B;
-      padding: 0 12px;
-      opacity: 0.7;
-    }
-    button {
-      align-items: center;
-      justify-content: center;
-
-      height: 40px;
-      width: 150px;
-      background: #445CAE;
-      margin: 0 auto;
-      margin-top: 30px;
-      font-weight: bold;
-      font-size: 14px;
-      color: #fff;
-      border-radius: 16px;
-      border: 0;
-    }
-
     img {
       align-items: center;
       justify-content: center;

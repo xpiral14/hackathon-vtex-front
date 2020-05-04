@@ -6,9 +6,9 @@ const Nav: React.FC = () => {
   return (
     <aside className="menu-area">
       <nav className="menu">
-        <Link to="/"></Link>
-        <Link to="/"></Link>
-        <Link to="/"></Link>
+        <Link to="/">Home</Link>
+        <Link to="/">dsds</Link>
+        <Link to="/">sdsd</Link>
       </nav>
     </aside>
   );

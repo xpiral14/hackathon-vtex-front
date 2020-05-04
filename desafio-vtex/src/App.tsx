@@ -5,6 +5,9 @@ import GlobalStyle from './styles/global';
 import Header from './components/Header';
 import Routes from './routes';
 
+// import AuthContext from './context/AuthContext';
+
+
 const App: React.FC = () => (
   <>
     <BrowserRouter>
