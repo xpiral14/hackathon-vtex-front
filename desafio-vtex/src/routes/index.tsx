@@ -9,7 +9,6 @@ import Merchant from '../pages/Merchant';
 import Profile from '../pages/Profile';
 import Suppliers from '../pages/Suppliers';
 
-
 const Routes: React.FC = () => (
   <Switch>
     <Route path="/" exact component={Dashboard} />
