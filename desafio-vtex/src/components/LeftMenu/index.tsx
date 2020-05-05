@@ -11,12 +11,12 @@ const LeftMenu: React.FC = () => (
 
     <Navigation>
       {/* replace a for link react-router-dom  */}
-      <a href="/">Página Inicial</a>
-      <a href="/">Editar perfil</a>
-      <a href="/">Pedidos</a>
-      <a href="/">Produtos</a>
-      <a href="/">Fonercedores parceiros</a>
-      <a href="/">Sair</a>
+      <a href="/merchant">Página Inicial</a>
+      <a href="/profile">Editar perfil</a>
+      <a href="#">Pedidos</a>
+      <a href="#">Produtos</a>
+      <a href="/suppliers">Fonercedores parceiros</a>
+      <a href="/auth">Sair</a>
 
     </Navigation>
   </Container>
