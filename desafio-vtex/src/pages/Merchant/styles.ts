@@ -28,7 +28,6 @@ export const Profile = styled.div<any>`
       font-weight: bold;
       font-size: 32px;
       line-height: 37px;
-
     }
 
     img {
@@ -36,7 +35,6 @@ export const Profile = styled.div<any>`
       height: 56px;
       border-radius: 50%;
       margin-left: 30px;
-    }
 `;
 
 export const Description = styled.div<any>`

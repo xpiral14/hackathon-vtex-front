@@ -61,11 +61,13 @@ const Logon: React.FC = () => {
         
 
         <Formulario>
+          <>
             <Form ref={formRef} onSubmit={handleSubmit}>
               <Input name="email" placeholder="Digite Seu E-mail" type="text"/>
               <Input name="password" placeholder="Digite Sua Senha" type="password"/>
               <Button type="submit" >Logar</Button>
             </Form>
+          </>
         </Formulario>
             
             <ApoiadoresText>
