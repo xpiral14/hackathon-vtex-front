@@ -28,7 +28,10 @@ export const Profile = styled.div<any>`
       font-weight: bold;
       font-size: 32px;
       line-height: 37px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 39163ba6e26c1e267164988346a3cb2234447814
     }
 
     img {
@@ -36,7 +39,10 @@ export const Profile = styled.div<any>`
       height: 56px;
       border-radius: 50%;
       margin-left: 30px;
+<<<<<<< HEAD
     }
+=======
+>>>>>>> 39163ba6e26c1e267164988346a3cb2234447814
 `;
 
 export const Description = styled.div<any>`

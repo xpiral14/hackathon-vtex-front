@@ -8,6 +8,7 @@ import pechinchaAiCicle from '../../assets/pechinchaAi-cicle.png';
 import principaisVantagens from '../../assets/principais-vantagens.png';
 
 import Header from '../../components/Header';
+
 import quemSomos from '../../assets/quem-somos.png';
 import cicle from '../../assets/cicle.png';
 import {
@@ -57,6 +58,7 @@ const Dashboard: React.FC = () => {
   return (
     <Container>
       <Header />
+
       <Banner bg={bannerBackground}>
         <BannerMiddle bgColor="#100F0F30">
           <h1>
@@ -70,6 +72,7 @@ const Dashboard: React.FC = () => {
             Seja PechinchAí!
           </span>
         </BannerMiddle>
+
       </Banner>
       <Content>
         <HowWork id = "como-funciona">
