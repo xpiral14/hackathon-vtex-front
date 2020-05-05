@@ -7,7 +7,6 @@ import { FiAlertCircle } from 'react-icons/fi';
 
 interface InputProps extends InputHTMLAttributes <HTMLInputElement> {
   name: string;
-
 }
 
 const Input: React.FC<InputProps> = ({name, ...rest}) => {
