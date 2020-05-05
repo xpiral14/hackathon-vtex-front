@@ -3,13 +3,12 @@ import market from '../../assets/market.png';
 import integration from '../../assets/integration.png';
 import estoqueFim from '../../assets/estoque-fim.png';
 import bannerBackground from '../../assets/commerce.png';
-import phoneBackground from '../../assets/phone.png';
 import notebookBackground from '../../assets/background-notebook.png';
 import pechinchaAiCicle from '../../assets/pechinchaAi-cicle.png';
 import principaisVantagens from '../../assets/principais-vantagens.png';
 
+import Header from '../../components/Header';
 import quemSomos from '../../assets/quem-somos.png';
-import restContent from '../../assets/rest-content.png';
 import cicle from '../../assets/cicle.png';
 import {
   Container,
@@ -29,6 +28,7 @@ interface infoInterface {
   text: string;
   image: string;
   alignText: 'right' | 'left';
+  alt: string;
 }
 const infos: infoInterface[] = [
   {
@@ -36,23 +36,27 @@ const infos: infoInterface[] = [
       'Primeiro de tudo, é necessário ter um E-Commerce. Caso você não possua esse serviço, providenciamos pra você!',
     image: market,
     alignText: 'right',
+    alt: "Comércio"
   },
   {
     text:
       'Com a integração realizada, o APP armazena os produtos e a quantidade em estoque, de cada produto.',
     image: integration,
     alignText: 'left',
+    alt: "integração"
   },
   {
     text:
       'Assim que o estoque do produto chega ao fim, muitos lojistas param de vendê-lo até realizarem o próximo pedido e tê-lo em estoque.&#013;Assim, é perdida a fidelização do cliente, e consequentemente o lucro das vendas!',
     image: estoqueFim,
     alignText: 'right',
+    alt: "estoque"
   },
 ];
 const Dashboard: React.FC = () => {
   return (
     <Container>
+      <Header />
       <Banner bg={bannerBackground}>
         <BannerMiddle bgColor="#100F0F30">
           <h1>
@@ -76,7 +80,7 @@ const Dashboard: React.FC = () => {
               {info.alignText === 'right' ? (
                 <>
                   <InfoImageContent>
-                    <img src={info.image} />
+                    <img src={info.image} alt = {info.alt}/>
                   </InfoImageContent>
                   <InfoTextContent>
                     <h1>{info.text}</h1>
@@ -88,7 +92,7 @@ const Dashboard: React.FC = () => {
                     <h1>{info.text}</h1>
                   </InfoTextContent>
                   <InfoImageContent>
-                    <img src={info.image} />
+                    <img src={info.image} alt = {info.alt}/>
                   </InfoImageContent>
                 </>
               )}
@@ -97,7 +101,7 @@ const Dashboard: React.FC = () => {
         </HowWork>
 
         <Banner bg={notebookBackground}>
-          <img src={cicle} style = {{marginTop: -200, width: "100%", maxWidth: "700px"}}/>
+          <img src={cicle} style = {{marginTop: -200, width: "100%", maxWidth: "700px"}} alt  ="Ciclo"/>
           <TitleContent>
             <h2>Sistema de Revenda</h2>
           </TitleContent>
@@ -118,13 +122,13 @@ const Dashboard: React.FC = () => {
         </Banner>
 
         <ImageContent>
-          <img src={pechinchaAiCicle} />
+          <img src={pechinchaAiCicle} alt = "pechincha Aí Circulo"/>
         </ImageContent>
         <ImageContent>
-          <img src={principaisVantagens} />
+          <img src={principaisVantagens} alt = "Principais vantagens"/>
         </ImageContent>
         <ImageContent id = "como-somos">
-          <img src={quemSomos} />
+          <img src={quemSomos}  alt = "Como somos"/>
         </ImageContent>
        
       </Content>

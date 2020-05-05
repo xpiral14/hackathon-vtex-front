@@ -6,6 +6,9 @@ import { FormHandles } from '@unform/core';
 import * as Yup from 'yup';
 import getValidationErrors from '../../utils/getValidationErrors';
 
+
+import Header from '../../components/Header';
+
 import LogoImg from '../../assets/logo.svg';
 import LogoShawee from '../../assets/logo-shawee.svg'
 import LogoVtex from '../../assets/logo-vtex.svg'
@@ -42,38 +45,42 @@ const Logon: React.FC = () => {
 
 
   return (
-    <Container>
-      <Content>
+    <>
+      <Header />
+        <Container>
+          <Content>
+          
 
-        <Logo>
-          <img src={LogoImg} alt="pexinxa"></img>  
-        </Logo>
+            <Logo>
+              <img src={LogoImg} alt="pexinxa"></img>  
+            </Logo>
 
-        <div>
+            <div>
 
-        </div>
-    
-
-    <Formulario>
-        <Form ref={formRef} onSubmit={handleSubmit}>
-          <Input name="email" placeholder="Digite Seu E-mail" type="text"/>
-          <Input name="password" placeholder="Digite Sua Senha" type="password"/>
-          <Button type="submit" >Logar</Button>
-        </Form>
-    </Formulario>
+            </div>
         
-        <ApoiadoresText>
-          <strong>Apoio:</strong>
-        </ApoiadoresText>
 
-        <ApoiadoresImg>
-          <img src={LogoShawee} alt="logo-Shawee"/>
-          <img src={LogoVtex} alt="logo-vtex" />
-        </ApoiadoresImg>
+        <Formulario>
+            <Form ref={formRef} onSubmit={handleSubmit}>
+              <Input name="email" placeholder="Digite Seu E-mail" type="text"/>
+              <Input name="password" placeholder="Digite Sua Senha" type="password"/>
+              <Button type="submit" >Logar</Button>
+            </Form>
+        </Formulario>
+            
+            <ApoiadoresText>
+              <strong>Apoio:</strong>
+            </ApoiadoresText>
+
+            <ApoiadoresImg>
+              <img src={LogoShawee} alt="logo-Shawee"/>
+              <img src={LogoVtex} alt="logo-vtex" />
+            </ApoiadoresImg>
 
 
-      </Content>
-    </Container>
+          </Content>
+        </Container>
+    </>
   );
 };
 
