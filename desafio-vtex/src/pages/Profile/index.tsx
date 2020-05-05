@@ -1,6 +1,6 @@
 import React, { useCallback, useRef } from 'react';
 
-import { Container, Content, Background} from './styles';
+import { Container, Background} from './styles';
 import { Form } from '@unform/web';
 import { FormHandles } from '@unform/core';
 import * as Yup from 'yup';

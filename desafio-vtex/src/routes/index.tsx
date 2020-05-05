@@ -7,6 +7,7 @@ import Home from '../pages/Home';
 
 import Merchant from '../pages/Merchant';
 import Profile from '../pages/Profile';
+import Suppliers from '../pages/Suppliers';
 
 
 const Routes: React.FC = () => (
@@ -15,7 +16,7 @@ const Routes: React.FC = () => (
     <Route path="/auth" component={Logon} />
     <Route path="/profile" component={Profile} />
 
-    
+    <Route path="/suppliers" component={Suppliers} />
     <Route path="/home" component={Home} />
     <Route path="/merchant" component={Merchant} />
   </Switch>
