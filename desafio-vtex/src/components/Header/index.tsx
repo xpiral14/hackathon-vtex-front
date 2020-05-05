@@ -10,13 +10,13 @@ const Header: React.FC = () => {
         <nav>
           <ul>
             <li>
-              <Link to="/">Pagina Inicial</Link>
+              <a href="/">Pagina Inicial</a>
             </li>
             <li>
-              <Link to="/">Como Somos</Link>
+              <a href="#como-funciona">Como Funciona</a>
             </li>
             <li>
-              <Link to="/">Quem Somos</Link>
+              <a href="#como-somos">Quem Somos</a>
             </li>
             <li>
               <Link to="/auth">Area do Lojista</Link>
