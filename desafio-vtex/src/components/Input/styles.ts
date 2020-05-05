@@ -8,11 +8,12 @@ interface ContainerProps {
 }
 
 export const Container = styled.div<ContainerProps>`
-      font-size: 30px;
+      font-size: 18px;
       line-height: 21px;
       width: 600px;
       height: 50px;
       margin-top: 33px;
+      text-align: center;
       border-radius: 20px;
       padding: 0 12px;
       opacity: 0.7;
@@ -38,6 +39,8 @@ export const Container = styled.div<ContainerProps>`
 
       input {
         background: transparent;
+        text-align: center;
+        font-size: 30px;
         border: 0;
         flex: 1;
       }`;
