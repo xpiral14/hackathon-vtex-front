@@ -1,6 +1,6 @@
 import React, { useCallback, useRef } from 'react';
 
-import { Container, Content, Logo, Formulario, ApoiadoresText, ApoiadoresImg} from './styles';
+import { Container, Content, Logo, Formulario, ApoiadoresText, ApoiadoresImg, A} from './styles';
 import { Form } from '@unform/web';
 import { FormHandles } from '@unform/core';
 import * as Yup from 'yup';
@@ -66,7 +66,8 @@ const Logon: React.FC = () => {
             <Form ref={formRef} onSubmit={handleSubmit}>
               <Input name="email" placeholder="Digite Seu E-mail" type="text"/>
               <Input name="password" placeholder="Digite Sua Senha" type="password"/>
-              <Button type="submit" >Logar</Button>
+              <A href = "/merchant"> Logar</A>
+              {/* <Button type="submit" >Logar</Button> */}
             </Form>
         </Formulario>
             
